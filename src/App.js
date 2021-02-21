@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import routes from 'routes';
+import AdminLayout from 'layout/Layout';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	const { admin, users } = routes;
+	const client = new QueryClient();
+	const pages = [...admin, ...users].map((route, i) => (
+		<Route
+			key={i}
+			exact
+			path={route.path}
+			render={() => {
+				const Component = route.page;
+				return (
+					<AdminLayout>
+						<Component />
+					</AdminLayout>
+				);
+			}}
+		/>
+	));
+	return (
+		<QueryClientProvider client={client}>
+			<Router>{pages}</Router>
+		</QueryClientProvider>
+	);
+};
 
 export default App;

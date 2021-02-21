@@ -1,10 +1,5 @@
-export { default as getUser } from './getUser';
-export { default as login } from './login';
-export { default as logout } from './logout';
 export { default as fetchItems } from './fetchItems';
 export { default as fetchItem } from './fetchItem';
 export { default as saveItem } from './saveItem';
 export { default as editItem } from './editItem';
 export { default as deleteItem } from './deleteItem';
-export { default as changePassword } from './changePassword';
-export { default as fetchPagedItems } from './fetchPagedItems';

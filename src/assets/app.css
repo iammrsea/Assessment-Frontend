@@ -1,0 +1,122 @@
+@import '~antd/dist/antd.css';
+
+.container {
+	margin: auto;
+	width: 80%;
+	margin-top: 20px;
+}
+
+.ant-layout-header {
+	background: #effdff;
+	color: #0153ff;
+}
+
+.ant-layout-header .ant-menu {
+	background: inherit;
+	border-bottom: inherit;
+	color: #0153ff;
+}
+
+.ant-menu a {
+	color: #0153ff !important;
+}
+
+.active-route {
+	border-bottom: solid !important;
+}
+
+.plan-spinner div.ant-spin-nested-loading {
+	width: -webkit-fill-available;
+}
+
+.logo {
+	width: 35px;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center
+}
+
+.ant-space-item {
+	width: 100%;
+}
+
+#user-profile-details span {
+	font-weight: 500;
+}
+
+.row {
+	cursor: pointer;
+}
+
+.footer {
+	display: flex;
+    padding: 0px;
+    background: #0153FF;
+    color: 'white';
+    height: 200px;
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: center
+}
+.product-variety-view{
+	background: ghostwhite;
+    padding: 20px;
+    border-radius: 20px;
+}
+.product-variety-list{
+	display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.product-variety-list button{
+	background: #DFFBFF;
+	color: #0153ff;
+	border: solid #DFFBFF;
+	font-weight: 600;
+}
+.product-variety-view-modal .ant-col{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.upload-button{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: gainsboro;
+	cursor: pointer;
+}
+
+.product-variety-list p{
+	font-weight: 500;
+    font-size: 18px;
+}
+.ant-modal-content{
+	margin-top: -50px !important;
+}
+.product-view .ant-input[disabled]{
+	color: black;
+}
+.product-view .ant-row{
+	margin-bottom: 30px;
+}
+.product-variety-view .actions{
+	margin-top: 20px;
+}
+.product-variety-view .actions button{
+	width: 100%;
+}
+.product-view .ant-row .ant-col{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.footer div {
+	height: 50px;
+	color: white;
+	text-align: center;
+}
+
+.footer a {
+	color: #DFFBFF !important;
+}
