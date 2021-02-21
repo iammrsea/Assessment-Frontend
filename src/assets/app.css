@@ -5,7 +5,11 @@
 	width: 80%;
 	margin-top: 20px;
 }
-
+.table-header{
+	font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px
+}
 .ant-layout-header {
 	background: #effdff;
 	color: #0153ff;
